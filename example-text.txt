@@ -1,0 +1,11 @@
+This plugin is created to help you neatly format argo submit commands. In this example text, there is some text before the submit command and some more text following it. Let us see how the plugin works. 
+
+To submit the workflow, you would call
+
+argo submit <path to workflow file.yaml> -n namespace --generate-name <some name> -p parameter=value -p parameter=value -p important_parameter=value -p critical_parameter=value -p optinal_parameter=value -p additional_parameter=value -p yetanotherparamater=value -p ingorethisparameter=value
+
+You can have another piece of text describing some other text. Then you can have another argo submit command. Sublime allows you to multi-select text, and this tool will work on that as well
+
+argo submit <path to workflow file.yaml> -n namespace --generate-name <some name> -p parameter=value -p parameter=value -p important_parameter=value -p critical_parameter=value -p optinal_parameter=value -p additional_parameter=value -p yetanotherparamater=value -p ingorethisparameter=value
+
+Calling the format tool will format the command, alphabetize the parameters and set snippet syntax to bash and the file syntax to markdown. Of course, these are customizable in the settings menu. To edit them, just head over to Sublime Text > Preferences > Package Settings > Argo Utils
